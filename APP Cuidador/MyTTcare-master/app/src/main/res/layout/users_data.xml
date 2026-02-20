@@ -1,0 +1,50 @@
+<!-- res/layout/item_data.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="nombre"
+            android:textColorHint="@color/edges"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btn_moreInfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ver más..."
+            android:textSize="20sp"
+            android:backgroundTint="@color/transparent"
+            android:textColorHint="@color/edges"
+            android:layout_alignParentEnd="true"
+            android:foregroundGravity="center"
+            android:textStyle="italic|bold"
+            android:layout_marginRight="50dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/delete"
+            android:layout_alignParentEnd="true"
+            android:background="@color/background"
+            android:contentDescription="Botón de eliminar"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PatientLocation"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:hint="Nombre (paciente)"
+                android:textColorHint="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/info"
+                android:layout_alignParentEnd="true"
+                android:background="@color/background"
+                android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Datos de ubicación"
+            android:textColorHint="@color/edges"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageView
+            android:id="@+id/btn_mao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/mapa"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_aditMedicines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/buttons"
+            android:hint="Editar área segura"
+            android:textColorHint="@color/white"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttons"
+                android:hint="Guardar"
+                android:textColorHint="@color/white"
+                android:textSize="25sp"
+                android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Cancelar"
+                android:textSize="25sp"
+                android:backgroundTint="@color/buttons"
+                android:textColorHint="@color/white"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+

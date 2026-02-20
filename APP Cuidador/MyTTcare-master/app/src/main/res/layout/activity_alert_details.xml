@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AlertDetails"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Situación de alerta"
+            android:textColorHint="@color/edges"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btn_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Volver..."
+            android:textSize="25sp"
+            android:backgroundTint="@color/buttons"
+            android:textColorHint="@color/white"
+            android:textStyle="italic|bold"
+            android:layout_gravity="right"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                android:textColorHint="@color/edges"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_nombre"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/tv_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_nombre"
+                android:layout_toEndOf="@id/tv_date"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Opciones de ayuda"
+                android:textColorHint="@color/edges"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/phone"
+                android:layout_alignParentEnd="true"
+                android:background="@color/background"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Llamar a..."
+                android:textSize="23dp"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_title"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_callPatient"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttons"
+                android:hint="Paciente"
+                android:textColorHint="@color/white"
+                android:textSize="23sp"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/btn_callFire"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="@color/buttons"
+                android:hint="Bomberos"
+                android:textColorHint="@color/white"
+                android:textSize="23sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:id="@+id/btn_callAmbulance"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttons"
+                android:hint="Ambulancia"
+                android:textColorHint="@color/white"
+                android:textSize="22sp"
+                android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/btn_callPolice"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:hint="Policía"
+                android:textSize="23sp"
+                android:backgroundTint="@color/buttons"
+                android:textColorHint="@color/white"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/btn_mao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/mapa"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+

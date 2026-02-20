@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Users"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Personas asignadas"
+            android:textColorHint="@color/edges"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:layout_marginBottom="20dp"/>
+        <include
+            android:id="@+id/include_patientsModule"
+            layout="@layout/users_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/layoutAddUsers" />
+
+        <RelativeLayout
+            android:id="@+id/layoutAddUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttons"
+                android:hint="Guardar"
+                android:textColorHint="@color/white"
+                android:textSize="25sp"
+                android:layout_alignParentStart="true"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Cancelar"
+                android:textSize="25sp"
+                android:backgroundTint="@color/buttons"
+                android:textColorHint="@color/white"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Vinculación con otro usuario"
+            android:textColorHint="@color/edges"
+            android:textSize="30dp"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="Pulsa y escanea el código QR del dispositivo"
+            android:textColorHint="@color/black"
+            android:textSize="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:background="@color/background"
+            android:contentDescription="Botón buscar qr"
+            app:srcCompat="@mipmap/qr_search"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
