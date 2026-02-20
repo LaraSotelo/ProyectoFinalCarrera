@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MyTT" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.MyTT" parent="Base.Theme.MyTT" />
+
+    <!-- Define un estilo personalizado para el DatePicker -->
+    <style name="CustomDatePicker" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Cambiar el color del encabezado (mes y año) -->
+        <item name="colorAccent">@color/edges</item>
+        <!-- Cambiar el color del fondo -->
+        <item name="android:datePickerDialogTheme">@style/CustomDatePickerDialog</item>
+    </style>
+
+    <!-- Estilo para el dialog del DatePicker -->
+    <style name="CustomDatePickerDialog" parent="ThemeOverlay.MaterialComponents.Dialog">
+        <item name="colorPrimary">@color/emergency_buttons</item>
+        <item name="colorAccent">@color/edges</item>
+    </style>
+
+</resources>
