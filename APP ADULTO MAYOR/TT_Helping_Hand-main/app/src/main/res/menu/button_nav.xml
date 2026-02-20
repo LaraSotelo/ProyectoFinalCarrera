@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Pill"
+        android:id="@+id/nav_medicine"
+        android:icon="@drawable/medicines"/>
+    <item android:title="Event"
+        android:id="@+id/nav_calendar"
+        android:icon="@drawable/calendar"/>
+    <item android:title="Alert"
+        android:id="@+id/nav_emergencies"
+        android:icon="@drawable/alerts"/>
+    <item android:title="Info"
+        android:id="@+id/nav_info"
+        android:icon="@drawable/info"/>
+    <item android:title="Me"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"/>
+
+</menu>

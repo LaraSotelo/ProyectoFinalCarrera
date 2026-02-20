@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.Profile"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:hint="Tu información"
+                android:textColorHint="@color/edges"
+                android:textSize="30dp"
+                android:textStyle="bold|italic" />
+
+            <ImageButton
+                android:id="@+id/btn_info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/info"
+                android:layout_alignParentEnd="true"
+                android:background="@color/background"
+                android:contentDescription="Botón de información"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/usuario"
+                android:layout_alignParentEnd="true"
+                android:background="@color/background"
+                android:contentDescription="Botón cambiar foto"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="nombre"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="edad"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="teléfono fijo"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="correo"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="dirección"
+                    android:textColorHint="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/buttons"
+                android:hint="Guardar"
+                android:textColorHint="@color/black"
+                android:textSize="25sp"
+                android:layout_alignParentStart="true"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Cancelar"
+                android:textSize="25sp"
+                android:backgroundTint="@color/buttons"
+                android:textColorHint="@color/black"
+                android:layout_alignParentEnd="true"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Mi zona segura"
+                android:textColorHint="@color/edges"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentStart="true"/>
+
+            <ImageButton
+                android:id="@+id/btn_info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/info"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"
+                android:background="@color/background"
+                android:contentDescription="Botón de información"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_Map"
+            android:layout_width="288dp"
+            android:layout_height="208dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/mapa" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Tu token:"
+                android:textColorHint="@color/edges"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentStart="true" />
+
+            <ImageView
+                android:id="@+id/btn_qr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentEnd="false"
+                android:background="@color/background"
+                android:contentDescription="Botón de información"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/qr_code" />
+
+            <ImageButton
+                android:id="@+id/btn_info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/info"
+                android:layout_alignParentEnd="true"
+                android:background="@color/background"
+                android:contentDescription="Botón de información"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

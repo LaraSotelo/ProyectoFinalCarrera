@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainActivity">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.mytt.UI.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/emergencies"
+        android:name="com.example.mytt.UI.Emergencies"
+        android:label="fragment_emergencies"
+        tools:layout="@layout/fragment_emergencies" />
+    <fragment
+        android:id="@+id/information"
+        android:name="com.example.mytt.UI.Information"
+        android:label="fragment_information"
+        tools:layout="@layout/fragment_information" />
+    <fragment
+        android:id="@+id/calendar"
+        android:name="com.example.mytt.UI.Calendar"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/medicines"
+        android:name="com.example.mytt.UI.Medicines"
+        android:label="fragment_medicines"
+        tools:layout="@layout/fragment_medicines" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.mytt.UI.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>
